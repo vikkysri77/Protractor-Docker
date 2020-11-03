@@ -15,9 +15,11 @@ jasmineNodeOpts: {
     showColors: true, // Use colors in the command line report.
   },
 onPrepare:function(){
+	var reportName =browser.params.reportName
            jasmine.getEnv().addReporter(
                 new Jasmine2HtmlReporter({
-                  savePath: 'target/screenshots'
+                  savePath: 'target/screenshots',
+		  fileName: reportName,
                 })
               );
 	 }
