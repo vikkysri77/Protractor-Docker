@@ -1,0 +1,17 @@
+{
+  "name": "Automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "dependencies": {
+    "protractor": "^5.4.4",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "nodemailer": "^6.4.13"
+  },
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
