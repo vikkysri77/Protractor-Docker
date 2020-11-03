@@ -1,7 +1,7 @@
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
 framework: "jasmine",
-specs: ["./specs/google-spec.js"],
+specs: ["./specs/google-spec.js","./specs/angularLogin.js","./specs/angularLogout.js","./specs/calculator.js"],
 
 directConnect : true,
 capabilities :{
