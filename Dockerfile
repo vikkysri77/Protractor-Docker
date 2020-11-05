@@ -4,6 +4,8 @@ WORKDIR /home/ubuntu/sample/
 
 COPY package*.json ./
 
+ENV SCRIPT=$SCRIPT
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends && \
     apt-get install -y openjdk-8-jre-headless && \
@@ -16,4 +18,5 @@ RUN apt-get update && \
 
 COPY . .
 
-CMD ["protractor", "conf.js"]
+CMD $SCRIPT
+

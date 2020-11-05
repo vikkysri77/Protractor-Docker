@@ -18,8 +18,9 @@ onPrepare:function(){
 	var reportName =browser.params.reportName
            jasmine.getEnv().addReporter(
                 new Jasmine2HtmlReporter({
-                  savePath: 'target/screenshots',
-		  fileName: reportName,
+                  savePath: 'reports',
+		 takeScreenshots: false,
+			fileName: reportName,
                 })
               );
 	 }
